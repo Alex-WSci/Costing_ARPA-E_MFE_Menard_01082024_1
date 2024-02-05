@@ -5,10 +5,11 @@ This cost category includes the costing for the plasma confinement coils, includ
 Consists of:
 
 \begin{itemize}
-    \item 22.1.3.1 Solenoid coils. The central solenoid in a tokamak functions as a primary electromagnet, creating a magnetic field that initiates the plasma and drives the plasma current.
-    \item 22.1.3.2 Poloidal field coils. These are responsible for shaping and stabilizing the plasma, helping to maintain its shape and control its position.
-    \item 22.1.3.3 Toroidal field coils. The toroidal field coils in a tokamak generate a powerful magnetic field that confines the plasma in a stable, donut-shaped loop.
-    \item 22.1.3.4 Structural support. In a tokamak the structure is needed to brace the magnets against torsional forces.
+    \item 22.1.3.1 Toroidal field coils. The toroidal field coils in a tokamak generate a powerful magnetic field that confines the plasma in a stable, donut-shaped loop.
+    \item 22.1.3.2 Central Solenoid. The central solenoid in a tokamak functions as a primary electromagnet, creating a magnetic field that initiates the plasma and drives the plasma current.
+    \item 22.1.3.3 Poloidal field coils. These are responsible for shaping and stabilizing the plasma, helping to maintain its shape and control its position.
+    \item 22.1.3.5 Shim Coils. In a tokamak the structure is needed to brace the magnets against torsional forces.    
+    \item 22.1.3.5 Structural support. In a tokamak the structure is needed to brace the magnets against torsional forces.
 \end{itemize}
    
 
@@ -29,12 +30,12 @@ This design consists of notfcoils divertor coils, which can be individually remo
 
 Both LTS and HTS cables can be considered here. For each, a wide variety of designs are available, including no-insulation, partial insulation, and an array of CICC geometries. For this concept, a simple CICC geometry is considered \cite{Menard2016}, comprising a layer of superconducting REBCO conductor, copper for quench mitigation and cooling, a central coolant channel, and a steel jacket to help resist the considerable forces experienced during operation. See \ref{fig:yuhu_cs} for the specific geometry.\\
 
-To cost the system, the magnet specifications are calibrated against \cite{Menard2016}, and extrapolated to the requirements of this concept. The total length of the conductor is then calculated and, assuming a cost of 12 \$/kAm, the total cost can be found. For the steel and copper, the volume is also found and multiplied by the cost per kilogram. This gives a total material cost for the coil, which is then multiplied by a manufacturing factor. The manufacturing factor comprises the cost of manufacturing the cables, then winding and installing the coils. \\
+To cost the system, the magnet specifications are calibrated against \cite{Menard2016}, and extrapolated to the requirements of this concept. The total length of the conductor is then calculated and, assuming a cost of 12 \$/kAm, the total cost can be found. For the steel and copper, the volume is also found and multiplied by the cost per kilogram. This gives a total material cost for the coil, which is then multiplied by a manufacturing factor. The manufacturing factor comprises the cost of manufacturing the cables and then winding and installing the coils. \\
 
 The total cost of the solenoid coils is C22010301 M USD.
 
 
-\subsubsection*{22.1.3.2 Polodal Field Coils}
+\subsubsection*{22.1.3.2 Poloidal Field Coils}
 
 This subsystem includes a large set of poloidal field coils. Again, both HTS and LTS coils can be considered here. In this case, HTS coils are used, owing to their significantly increased current density. HTS coils are preferable in this case, owing to the large required field to contain the plasma.  \\
 
@@ -54,47 +55,53 @@ These cost C22010303 M USD.\\
 
 \begin{table}[h]
 \centering
-%\resizebox{0.7\linewidth}{!}{%}
-\begin{tabular}{lccc}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
 \hline
-\textbf{Parameter} & \textbf{Solenoid} & \textbf{Mirror 1} & \textbf{Mirror 2} \\
+\textbf{Parameter} & \textbf{Coil 1} & \textbf{Coil 2} & \textbf{Coil 3} & \textbf{Coil 4} & \textbf{Coil 5} & \textbf{Coil 6} & \textbf{Coil 7} & \textbf{Coil 8} & \textbf{Coil 9} & \textbf{Coil 10} \\
 \hline
-Radius (m)& rcentre1 & rcentre2 & rcentre3 \\
-dr (m)& dr1 & dr2 & dr3 \\
-dz (m)& dz1 & dz2 & dz3 \\
-Current supply (kA) & currentsupply1 & currentsupply2 & currentsupply3 \\
-Cable current density (A/mm$^2$)& jcable1 & jcable2 & jcable3 \\
-Conductor current density (A/mm$^2$) & jtape & jtape & jtape \\
-Cable width (m)& cablew & cablew & cablew \\
-Cable height (m)& cableh & cableh & cableh \\
-Total volume (m$^3$)& volcoil1 & volcoil2 & volcoil3 \\
-Cross-sectional area (m$^2$)& csarea1 & csarea2 & csarea3 \\
+Magnet Type & magnetType1 & magnetType2 & magnetType3 & magnetType4 & magnetType5 & magnetType6 & magnetType7 & magnetType8 & magnetType9 & magnetType10 \\
+Radius (m) & rCentre1 & rCentre2 & rCentre3 & rCentre4 & rCentre5 & rCentre6 & rCentre7 & rCentre8 & rCentre9 & rCentre10 \\
+dr (m) & dr1 & dr2 & dr3 & dr4 & dr5 & dr6 & dr7 & dr8 & dr9 & dr10 \\
+dz (m) & dz1 & dz2 & dz3 & dz4 & dz5 & dz6 & dz7 & dz8 & dz9 & dz10 \\
+Current supply (MA) & currentSupply1 & currentSupply2 & currentSupply3 & currentSupply4 & currentSupply5 & currentSupply6 & currentSupply7 & currentSupply8 & currentSupply9 & currentSupply10 \\
+Cable current density (A/mm$^2$) & jCable1 & jCable2 & jCable3 & jCable4 & jCable5 & jCable6 & jCable7 & jCable8 & jCable9 & jCable10 \\
+Conductor current density (A/mm$^2$) & jTape1 & jTape2 & jTape3 & jTape4 & jTape5 & jTape6 & jTape7 & jTape8 & jTape9 & jTape10 \\
+Cable width (m) & cableW1 & cableW2 & cableW3 & cableW4 & cableW5 & cableW6 & cableW7 & cableW8 & cableW9 & cableW10 \\
+Cable height (m) & cableH1 & cableH2 & cableH3 & cableH4 & cableH5 & cableH6 & cableH7 & cableH8 & cableH9 & cableH10 \\
+Total volume (m$^3$) & volCoil1 & volCoil2 & volCoil3 & volCoil4 & volCoil5 & volCoil6 & volCoil7 & volCoil8 & volCoil9 & volCoil10 \\
+Cross-sectional area (m$^2$) & csArea1 & csArea2 & csArea3 & csArea4 & csArea5 & csArea6 & csArea7 & csArea8 & csArea9 & csArea10 \\
+Turn-turn Insulation Fraction & fracIns1 & fracIns2 & fracIns3 & fracIns4 & fracIns5 & fracIns6 & fracIns7 & fracIns8 & fracIns9 & fracIns10 \\
 \hline
-Cable turns & turnsc1 & turnsc2 & turnsc3 \\
-Turns of conductor/cable & turnsscs1 & turnsscs2 & turnsscs3 \\
-Total turns of conductor & turnssctot1 & turnssctot2 & turnssctot3  \\
-Length of conductor (km)& tapelength1 & tapelength2 & tapelength3 \\
-Current per conductor (A)& tapecurrent1 & tapecurrent2 & tapecurrent3 \\
+Cable turns & turnsC1 & turnsC2 & turnsC3 & turnsC4 & turnsC5 & turnsC6 & turnsC7 & turnsC8 & turnsC9 & turnsC10 \\
+Total turns of conductor & turnsScTot1 & turnsScTot2 & turnsScTot3 & turnsScTot4 & turnsScTot5 & turnsScTot6 & turnsScTot7 & turnsScTot8 & turnsScTot9 & turnsScTot10 \\
+Length of conductor (km) & tapeLength1 & tapeLength2 & tapeLength3 & tapeLength4 & tapeLength5 & tapeLength6 & tapeLength7 & tapeLength8 & tapeLength9 & tapeLength10 \\
+Current per conductor (A) & tapeCurrent1 & tapeCurrent2 & tapeCurrent3 & tapeCurrent4 & tapeCurrent5 & tapeCurrent6 & tapeCurrent7 & tapeCurrent8 & tapeCurrent9 & tapeCurrent10 \\
 \hline
-Cost of SC (M USD)& costSC1 & costSC2 & costSC3 \\
-Cost of copper (M USD)& costcu1 & costcu2 & costcu3 \\
-Cost of SS (M USD)& costss1 & costss2 & costss3 \\
-Total material cost (M USD)&  totmatcost1 & totmatcost2 & totmatcost3 \\
-Manufacturing factor (M USD)& mfrfactor & mfrfactor & mfrfactor \\
-Structural cost (M USD) & solstructcost & m1structcost & m2structcost \\
-Quantity & noscoils & nom1coils & nom2coils \\
-Magnet cost (single)(M USD) & solmagcost & m1magcost & m2magcost \\
-Magnet $+$ structure cost (single) (M USD) & totsolcosti & totm1costi & totm2costi \\
+Cost of SC (M USD) & costSC1 & costSC2 & costSC3 & costSC4 & costSC5 & costSC6 & costSC7 & costSC8 & costSC9 & costSC10 \\
+Cost of copper (M USD) & costCu1 & costCu2 & costCu3 & costCu4 & costCu5 & costCu6 & costCu7 & costCu8 & costCu9 & costCu10 \\
+Cost of SS (M USD) & costSS1 & costSS2 & costSS3 & costSS4 & costSS5 & costSS6 & costSS7 & costSS8 & costSS9 & costSS10 \\
+Cost of other turn-turn insulation (M USD) & costI1 & costI2 & costI3 & costI4 & costI5 & costI6 & costI7 & costI8 & costI9 & costI10 \\
+Total material cost (M USD) & totMatCost1 & totMatCost2 & totMatCost3 & totMatCost4 & totMatCost5 & totMatCost6 & totMatCost7 & totMatCost8 & totMatCost9 & totMatCost10 \\
+Manufacturing factor & mfrFactor1 & mfrFactor2 & mfrFactor3 & mfrFactor4 & mfrFactor5 & mfrFactor6 & mfrFactor7 & mfrFactor8 & mfrFactor9 & mfrFactor10 \\
+Structural cost (M USD) & Coil1StructCost & Coil2StructCost & Coil3StructCost & Coil4StructCost & Coil5StructCost & Coil6StructCost & Coil7StructCost & Coil8StructCost & Coil9StructCost & Coil10StructCost \\
+Quantity & noCoil1Coils & noCoil2Coils & noCoil3Coils & noCoil4Coils & noCoil5Coils & noCoil6Coils & noCoil7Coils & noCoil8Coils & noCoil9Coils & noCoil10Coils \\
+Magnet cost (single)(M USD) & Coil1MagCost & Coil2MagCost & Coil3MagCost & Coil4MagCost & Coil5MagCost & Coil6MagCost & Coil7MagCost & Coil8MagCost & Coil9MagCost & Coil10MagCost \\
+Magnet + structure cost (single) (M USD) & totalCoil1CostI & totalCoil2CostI & totalCoil3CostI & totalCoil4CostI & totalCoil5CostI & totalCoil6CostI & totalCoil7CostI & totalCoil8CostI & totalCoil9CostI & totalCoil10CostI \\
 \hline
-Total cost (M USD) & totsolcost & totm1cost & totm2cost \\
+Total cost (M USD) & totalCoil1Cost & totalCoil2Cost & totalCoil3Cost & totalCoil4Cost & totalCoil5Cost & totalCoil6Cost & totalCoil7Cost & totalCoil8Cost & totalCoil9Cost & totalCoil10Cost \\
 \hline
-\end{tabular}
- % end \resizebox
-\caption{Design parameters for an individual coil of each of the main coils in this concept. In the concept, there are 2 mirror coils at each end, and noscoils equally axially distributed, identical solenoid coils.}
+\end{tabular}}
+\caption{Design parameters for an individual coil of each of the main coils in this concept.}
 \label{your-table-label}
 \end{table}
 
-\subsubsection*{22.1.3.4 Structural cost for coils}
+
+\subsubsection*{22.1.3.4 Shim Coils}
+
+These coils serve to apply fine adjustments to the field profile to maintain field uniformity, and control any plasma disturbances. These cost C22010304 M USD.\\
+
+\subsubsection*{22.1.3.5 Structural cost for coils}
 
 The structural cost for the coils is difficult to cost from first principles without detailed structural analysis with FEM. Here, the approach is a series of analytical estimations of the dominant stresses. These include:
 
@@ -106,6 +113,6 @@ The structural cost for the coils is difficult to cost from first principles wit
 \end{itemize}
 
 
-By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 25\% of the coil cost is used as a conservative factor. This is in comparison to 50-100\% as the standard for Tokamaks. The structural cost is thus C22010304 M USD.
+By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 25\% of the coil cost is used as a conservative factor. This is in comparison to 50-100\% as the standard for Tokamaks. The structural cost is thus C22010305 M USD.
 
 
