@@ -17,7 +17,7 @@ Consists of:
 \end{itemize}
    
 
-The approach taken was to compare various geometries of HTS, LTS and copper coil sets using COMSOL, with the same central field and minimum inner radius requirements. These were down-selected to an HTS geometry with noCoil1Coils solenoid coils, and noCoil2Coils inner mirror coils and noCoil3Coils outer mirror coils.\\
+The approach taken was to compare various geometries of HTS, LTS and copper coil sets using COMSOL, with the same central field and minimum inner radius requirements. These were down-selected to an HTS geometry with 12 solenoid coils, and 1 inner mirror coils and 2 outer mirror coils.\\
 
 To determine the cost, the coil parameters were determined using a combination of COMSOL, calibration points from the literature including Menard 2016 \cite{Menard2016} for HTS, and EU DEMO for LTS, and analytical electromagnetic modeling. The material cost then then be determined through the mass/length (in the case of REBCO tape) of each material used. 
 
@@ -53,22 +53,22 @@ Another recommended approach is to employ a multi-physics FEM tool such as COMSO
 
 It should be noted that a series of optimizations can be made to the design to reduce cost. The first of these is conductor grading. By reducing the number of strands of superconductor where the fields lower, up to 50\% of the superconducting material can be saved \cite{uglietti2018progressing}.\\
 
-The total cost of the coils is 1803.3 M USD.
+The total cost of the coils is 1834.5 M USD.
 
 
 \subsubsection*{22.1.3.1 Toroidal Coils}
 
-This design consists of notfcoils toroidal field coils, which can be individually removed for maintenance. The total cost is \$4.7 M .\\
+This design consists of notfcoils toroidal field coils, which can be individually removed for maintenance. The total cost is \$15.7 M .\\
 
 Both LTS and HTS cables can be considered here. For each, a wide variety of designs are available, including no-insulation, partial insulation, and an array of CICC geometries. For this concept, a simple CICC geometry is considered \cite{Menard2016}, comprising a layer of superconducting REBCO conductor, copper for quench mitigation and cooling, a central coolant channel, and a steel jacket to help resist the considerable forces experienced during operation. See \ref{fig:yuhu_cs} for the specific geometry.\\
 
 To cost the system, the magnet specifications are calibrated against \cite{Menard2016}, and extrapolated to the requirements of this concept. The total length of the conductor is then calculated and, assuming a cost of 12 \$/kAm, the total cost can be found. For the steel and copper, the volume is also found and multiplied by the cost per kilogram. This gives a total material cost for the coil, which is then multiplied by a manufacturing factor. The manufacturing factor comprises the cost of manufacturing the cables, then winding and installing the coils. \\
 
-The total cost of the TF coils is \$19.6 M.
+The total cost of the TF coils is \$32.6 M.
 
 \subsubsection*{22.1.3.2 Central solenoid}
 
-For the central solenoid, either LTS or HTS cables are viable. In this case, the HTS geometry as seen in \ref{fig:yuhu_cs} is used. The total cost is \$4.7 M.
+For the central solenoid, either LTS or HTS cables are viable. In this case, the HTS geometry as seen in \ref{fig:yuhu_cs} is used. The total cost is \$15.7 M.
 
 \subsubsection*{22.1.3.3 Poloidal Coils}
 
@@ -79,29 +79,29 @@ The total cost of the PF coils is \$1365.1 M. \\
 
 \subsubsection*{22.1.3.4 Shim Coils}
 
-These coils serve to apply fine adjustments to the field profile to maintain field uniformity, and control any plasma disturbances. The placement, size, and magnitude of these coils is dependent upon the uniformity requirements of the plasma, and requires sophisticated FEM analysis to accurately quantify. As such, for the scope of this costing report, a simple factor of 5\% of the total primary magnet costs is taken. The resulting cost is \$69.5 M.\\
+These coils serve to apply fine adjustments to the field profile to maintain field uniformity, and control any plasma disturbances. The placement, size, and magnitude of these coils is dependent upon the uniformity requirements of the plasma, and requires sophisticated FEM analysis to accurately quantify. As such, for the scope of this costing report, a simple factor of 5\% of the total primary magnet costs is taken. The resulting cost is \$70.7 M.\\
 
 \begin{table}[h]
 \centering
 \resizebox{\linewidth}{!}{%
 \begin{tabular}{lcccccccccc}
 \hline
-\textbf{Parameter} & \textbf{Coil 1} & \textbf{Coil 2} & \textbf{Coil 3} & \textbf{Coil 4} & \textbf{Coil 5} & \textbf{Coil 6} & \textbf{Coil 7} & \textbf{Coil 8} & \textbf{Coil 9} & \textbf{Coil 10} \\
+\textbf{Parameter} & \textbf{TF} & \textbf{CS} & \textbf{PF1} & \textbf{PF2} & \textbf{PF3} & \textbf{PF4} & \textbf{PF5} & \textbf{PF6} & \textbf{PF7} & \textbf{PF8} \\
 \hline
 Magnet Type & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC & HTS CICC0 \\
-Radius (m) & 0.9000000000000008 & 0.18 & 0.67 & 0.9 & 1.28 & 2.72 & 5.3 & 9.34 & 9.34 & 0.90000000000000080 \\
+Radius (m) & 0.9 & 0.18 & 0.67 & 0.9 & 1.28 & 2.72 & 5.3 & 9.34 & 9.34 & 0.90 \\
 dr (m) & 0.2 & 0.2 & 0.3 & 0.3 & 0.5 & 0.8 & 1.8 & 1 & 1 & 0.20 \\
 dz (m) & 0.3 & 6.3 & 0.6 & 0.6 & 0.6 & 0.4 & 0.4 & 1 & 1 & 0.30 \\
 Current supply (MA) & 4.5 & 64.8 & 9.3 & 9.3 & 15.4 & 14.3 & 34.2 & 51.4 & 51.4 & 4.50 \\
 Conductor current density (A/mm$^2$) & 200 & 200 & 200 & 200 & 200 & 200 & 200 & 200 & 200 & 2000 \\
 Cable width (m) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.00 \\
 Cable height (m) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.00 \\
-Total volume (m$^3$) & 0.5 & 1.4 & 0.8 & 1.0 & 2.4 & 4.7 & 22.2 & 58.7 & 58.7 & 0.50 \\
+Total volume (m$^3$) & volTF & volCS & volPF1 & volPF2 & volPF3 & volPF4 & volPF5 & volPF6 & volPF7 & volPF8 \\
 Cross-sectional area (m$^2$) & 0.1 & 1.3 & 0.2 & 0.2 & 0.3 & 0.3 & 0.7 & 1 & 1 & 0.10 \\
 Turn-turn Insulation Fraction & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 00 \\
 \hline
 Cable turns & 367.6 & 5294.1 & 756.3 & 756.3 & 1260.5 & 1166.0 & 2798.3 & 4201.7 & 4201.7 & 367.60 \\
-Total turns of conductor & 43245.2 & 622730.8 & 88961.5 & 88961.5 & 148269.2 & 137149.0 & 329157.7 & 494230.8 & 494230.8 & 43245.20 \\
+Total turns of conductor & 43245.0 & 622731.0 & 88962.0 & 88962.0 & 148269.0 & 137149.0 & 329158.0 & 494231.0 & 494231.0 & 43245.00 \\
 Length of conductor (km) & 244.5 & 704.3 & 374.5 & 503.1 & 1192.5 & 2343.9 & 10961.2 & 29003.9 & 29003.9 & 244.50 \\
 Current per conductor (A) & 104.0 & 104.0 & 104.0 & 104.0 & 104.0 & 104.0 & 104.0 & 104.0 & 104.0 & 104.00 \\
 \hline
@@ -111,13 +111,13 @@ Cost of copper (M USD) & 0.0 & 0.0 & 0.0 & 0.0 & 0.1 & 0.1 & 0.6 & 1.5 & 1.5 & 0
 Cost of SS (M USD) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.2 & 0.6 & 0.6 & 0.00 \\
 Cost of other turn-turn insulation (M USD) & - & - & - & - & - & - & - & - & - & -0 \\
 Total material cost (M USD) & 0.3 & 0.8 & 0.4 & 0.6 & 1.3 & 2.6 & 12.2 & 32.2 & 32.2 & 0.30 \\
-Manufacturing factor & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 30 \\
-Structural cost (M USD) & Coil1StructCost & Coil2StructCost & Coil3StructCost & Coil4StructCost & Coil5StructCost & Coil6StructCost & Coil7StructCost & Coil8StructCost & Coil9StructCost & Coil10StructCost \\
-Quantity & noCoil1Coils & noCoil2Coils & noCoil3Coils & noCoil4Coils & noCoil5Coils & noCoil6Coils & noCoil7Coils & noCoil8Coils & noCoil9Coils & noCoil10Coils \\
-Magnet cost (single)(M USD) & Coil1MagCost & Coil2MagCost & Coil3MagCost & Coil4MagCost & Coil5MagCost & Coil6MagCost & Coil7MagCost & Coil8MagCost & Coil9MagCost & Coil10MagCost \\
-Magnet + structure cost (single) (M USD) & totalCoil1CostI & totalCoil2CostI & totalCoil3CostI & totalCoil4CostI & totalCoil5CostI & totalCoil6CostI & totalCoil7CostI & totalCoil8CostI & totalCoil9CostI & totalCoil10CostI \\
+Manufacturing factor & 5 & 10 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 50 \\
+Structural cost (M USD) & 1.4 & 7.8 & 1.2 & 1.7 & 4.0 & 7.8 & 36.5 & 96.7 & 96.7 & 96.7 \\
+Quantity & 12 & 1 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\
+Magnet cost (single)(M USD) & 1.4 & 7.8 & 1.2 & 1.7 & 4.0 & 7.8 & 36.5 & 96.7 & 96.7 & 96.7 \\
+Magnet + structure cost (single) (M USD) & 2.7 & 15.7 & 2.5 & 3.4 & 7.9 & 15.6 & 73.1 & 193.4 & 193.4 & 193.4 \\
 \hline
-Total cost (M USD) & totalCoil1Cost & totalCoil2Cost & totalCoil3Cost & totalCoil4Cost & totalCoil5Cost & totalCoil6Cost & totalCoil7Cost & totalCoil8Cost & totalCoil9Cost & totalCoil10Cost \\
+Total cost (M USD) & 32.6 & 15.7 & 5.0 & 6.7 & 15.9 & 31.3 & 146.1 & 386.7 & 386.7 & 386.7 \\
 \hline
 \end{tabular}}
 \caption{Design parameters for an individual coil of each of the main coils in this concept.}
@@ -136,6 +136,6 @@ The structural cost for the coils is difficult to cost from first principles wit
 \end{itemize}
 
 
-In the case of Tokamaks, significant torsional forces are induced, demanding considerable bracing structure. By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 100\% of the coil cost is used as a conservative factor, based on previous Tokamak structural costs. The structural cost is thus 344.4 M USD.
+In the case of Tokamaks, significant torsional forces are induced, demanding considerable bracing structure. By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 100\% of the coil cost is used as a conservative factor, based on previous Tokamak structural costs. The structural cost is thus 350.5 M USD.
 
 
