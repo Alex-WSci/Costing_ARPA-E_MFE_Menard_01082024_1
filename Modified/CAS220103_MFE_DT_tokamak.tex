@@ -64,7 +64,7 @@ Both LTS and HTS cables can be considered here. For each, a wide variety of desi
 
 To cost the system, the magnet specifications are calibrated against \cite{Menard2016}, and extrapolated to the requirements of this concept. The total length of the conductor is then calculated and, assuming a cost of 12 \$/kAm, the total cost can be found. For the steel and copper, the volume is also found and multiplied by the cost per kilogram. This gives a total material cost for the coil, which is then multiplied by a manufacturing factor. The manufacturing factor comprises the cost of manufacturing the cables, then winding and installing the coils. \\
 
-The total cost of the solenoid coils is \$65.4 M.
+The total cost of the TF coils is \$65.4 M.
 
 \subsubsection*{22.1.3.2 Central solenoid}
 
@@ -75,11 +75,11 @@ For the central solenoid, either LTS or HTS cables are viable. In this case, the
 This subsystem includes 16, corresponding to 8.0 pairs of identical pairs, displaced in positive and negative z coordinates. Owing to the generally large radius, HTS and LTS coils must be considered here. In this case, HTS coils are used, owing to their significantly increased current density, reducing the required number of turns and length of superconductor. This allows for a reduced form factor for the entire system, resulting in a multiplicative cost saving. The cable geometry used here is described in \ref{fig:yuhu_cs}, although other HTS CICC geometries may be more optimised.
 Since the lower PF coils are effectively trapped by the TF coils and the power core above them, additional spare PF coils are to be provided below the power core. Even though the PF coils are designed to be life of plant and replaceable, the downtime to replace these particular lower PF coils are so onerous, it is more cost effective to have spares installed during the initial build sequence.  \\
 
-The total cost of the PF coils is \$3.6 M. \\
+The total cost of the PF coils is \$522 M. \\
 
 \subsubsection*{22.1.3.4 Shim Coils}
 
-These coils serve to apply fine adjustments to the field profile to maintain field uniformity, and control any plasma disturbances. The placement, size, and magnitude of these coils is dependent upon the uniformity requirements of the plasma, and requires sophisticated FEM analysis to accurately quantify. As such, for the scope of this costing report, a simple factor of 5\% of the total primary magnet costs is taken. The resulting cost is \$1436.404 M.\\
+These coils serve to apply fine adjustments to the field profile to maintain field uniformity, and control any plasma disturbances. The placement, size, and magnitude of these coils is dependent upon the uniformity requirements of the plasma, and requires sophisticated FEM analysis to accurately quantify. As such, for the scope of this costing report, a simple factor of 5\% of the total primary magnet costs is taken. The resulting cost is \$60 M.\\
 
 \begin{table}[h]
 \centering
@@ -93,10 +93,8 @@ Radius (m) & 3.93 & 0.18 & 0.67 & 0.9 & 1.28 & 2.72 & 5.3 & 9.34 & 9.34 & 3.930 
 dr (m) & 0.2 & 0.2 & 0.3 & 0.3 & 0.5 & 0.8 & 1.8 & 1 & 1 & 0.20 \\
 dz (m) & 0.3 & 6.3 & 0.6 & 0.6 & 0.6 & 0.4 & 0.4 & 1 & 1 & 0.30 \\
 Current supply (MA) & 3.4 & 48.6 & 6.9 & 6.9 & 11.6 & 10.7 & 25.7 & 38.5 & 38.5 & 3.40 \\
-Cable current density (A/mm$^2$) & jCable1 & jCable2 & jCable3 & jCable4 & jCable5 & jCable6 & jCable7 & jCable8 & jCable9 & jCable10 \\
-Conductor current density (A/mm$^2$) & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 010 \\
-Cable width (m) & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.06 & 0.07 & 0.08 & 0.09 & 0.010 \\
-Cable height (m) & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.06 & 0.07 & 0.08 & 0.09 & 0.010 \\
+Cable width (m) & 0.014 &0.014 &0.014 & 0.014 & 0.014&0.014 & 0.014 & 0.014 & 0.014 & 0.014 \\
+Cable height (m) & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 \\
 Total volume (m$^3$) & 2.2 & 1.4 & 0.8 & 1.0 & 2.4 & 4.7 & 22.2 & 58.7 & 58.7 & 2.20 \\
 Cross-sectional area (m$^2$) & 0.1 & 1.3 & 0.2 & 0.2 & 0.3 & 0.3 & 0.7 & 1 & 1 & 0.10 \\
 Turn-turn Insulation Fraction & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 00 \\
@@ -106,6 +104,7 @@ Total turns of conductor & 43245.2 & 622730.8 & 88961.5 & 88961.5 & 148269.2 & 1
 Length of conductor (km) & 1067.8 & 704.3 & 374.5 & 503.1 & 1192.5 & 2343.9 & 10961.2 & 29003.9 & 29003.9 & 1067.80 \\
 Current per conductor (A) & 78.0 & 78.0 & 78.0 & 78.0 & 78.0 & 78.0 & 78.0 & 78.0 & 78.0 & 78.00 \\
 \hline
+Cost of REBCO tape(\$/kAm) & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 \\
 Cost of SC (M USD) & 0.8 & 0.5 & 0.3 & 0.4 & 0.9 & 1.8 & 8.5 & 22.6 & 22.6 & 0.80 \\
 Cost of copper (M USD) & 0.1 & 0.0 & 0.0 & 0.0 & 0.1 & 0.1 & 0.6 & 1.5 & 1.5 & 0.10 \\
 Cost of SS (M USD) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.2 & 0.6 & 0.6 & 0.00 \\
@@ -136,6 +135,6 @@ The structural cost for the coils is difficult to cost from first principles wit
 \end{itemize}
 
 
-In the case of Tokamaks, significant torsional forces are induced, demanding considerable bracing structure. By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 100\% of the coil cost is used as a conservative factor, based on previous Tokamak structural costs. The structural cost is thus 1436.405 M USD.
+In the case of Tokamaks, significant torsional forces are induced, demanding considerable bracing structure. By considering these primary contributions, an estimate of the structural material required (such as the hoop restraint requirements) can be calculated. From this preliminary estimate, a structural cost of 100\% of the coil cost is used as a conservative factor, based on previous Tokamak structural costs. The structural cost is thus 718 M USD.
 
 
