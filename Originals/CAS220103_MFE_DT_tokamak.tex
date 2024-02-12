@@ -17,7 +17,7 @@ Consists of:
 \end{itemize}
    
 
-The approach taken was to compare various geometries of HTS, LTS and copper coil sets using COMSOL, with the same central field and minimum inner radius requirements. These were down-selected to an HTS geometry with noCoil1Coils solenoid coils, and noCoil2Coils inner mirror coils and noCoil3Coils outer mirror coils.\\
+The approach taken was to compare various geometries of HTS, LTS and copper coil sets using COMSOL, with the same central field and minimum inner radius requirements. These were down-selected to an HTS geometry with noTFCoils solenoid coils, and noCSCoils inner mirror coils and noPF1Coils outer mirror coils.\\
 
 To determine the cost, the coil parameters were determined using a combination of COMSOL, calibration points from the literature including Menard 2016 \cite{Menard2016} for HTS, and EU DEMO for LTS, and analytical electromagnetic modeling. The material cost then then be determined through the mass/length (in the case of REBCO tape) of each material used. 
 
@@ -86,7 +86,7 @@ These coils serve to apply fine adjustments to the field profile to maintain fie
 \resizebox{\linewidth}{!}{%
 \begin{tabular}{lcccccccccc}
 \hline
-\textbf{Parameter} & \textbf{Coil 1} & \textbf{Coil 2} & \textbf{Coil 3} & \textbf{Coil 4} & \textbf{Coil 5} & \textbf{Coil 6} & \textbf{Coil 7} & \textbf{Coil 8} & \textbf{Coil 9} & \textbf{Coil 10} \\
+\textbf{Parameter} & \textbf{TF} & \textbf{CS} & \textbf{PF1} & \textbf{PF2} & \textbf{PF3} & \textbf{PF4} & \textbf{PF5} & \textbf{PF6} & \textbf{PF7} & \textbf{PF8} \\
 \hline
 Magnet Type & magnetType1 & magnetType2 & magnetType3 & magnetType4 & magnetType5 & magnetType6 & magnetType7 & magnetType8 & magnetType9 & magnetType10 \\
 Radius (m) & rCentre1 & rCentre2 & rCentre3 & rCentre4 & rCentre5 & rCentre6 & rCentre7 & rCentre8 & rCentre9 & rCentre10 \\
@@ -96,7 +96,7 @@ Current supply (MA) & currentSupply1 & currentSupply2 & currentSupply3 & current
 Conductor current density (A/mm$^2$) & jTape1 & jTape2 & jTape3 & jTape4 & jTape5 & jTape6 & jTape7 & jTape8 & jTape9 & jTape10 \\
 Cable width (m) & cableW1 & cableW2 & cableW3 & cableW4 & cableW5 & cableW6 & cableW7 & cableW8 & cableW9 & cableW10 \\
 Cable height (m) & cableH1 & cableH2 & cableH3 & cableH4 & cableH5 & cableH6 & cableH7 & cableH8 & cableH9 & cableH10 \\
-Total volume (m$^3$) & volCoil1 & volCoil2 & volCoil3 & volCoil4 & volCoil5 & volCoil6 & volCoil7 & volCoil8 & volCoil9 & volCoil10 \\
+Total volume (m$^3$) & volTF & volCS & volPF1 & volPF2 & volPF3 & volPF4 & volPF5 & volPF6 & volPF7 & volPF8 \\
 Cross-sectional area (m$^2$) & csArea1 & csArea2 & csArea3 & csArea4 & csArea5 & csArea6 & csArea7 & csArea8 & csArea9 & csArea10 \\
 Turn-turn Insulation Fraction & fracIns1 & fracIns2 & fracIns3 & fracIns4 & fracIns5 & fracIns6 & fracIns7 & fracIns8 & fracIns9 & fracIns10 \\
 \hline
@@ -112,12 +112,12 @@ Cost of SS (M USD) & costSS1 & costSS2 & costSS3 & costSS4 & costSS5 & costSS6 &
 Cost of other turn-turn insulation (M USD) & costI1 & costI2 & costI3 & costI4 & costI5 & costI6 & costI7 & costI8 & costI9 & costI10 \\
 Total material cost (M USD) & totMatCost1 & totMatCost2 & totMatCost3 & totMatCost4 & totMatCost5 & totMatCost6 & totMatCost7 & totMatCost8 & totMatCost9 & totMatCost10 \\
 Manufacturing factor & mfrFactor1 & mfrFactor2 & mfrFactor3 & mfrFactor4 & mfrFactor5 & mfrFactor6 & mfrFactor7 & mfrFactor8 & mfrFactor9 & mfrFactor10 \\
-Structural cost (M USD) & Coil1StructCost & Coil2StructCost & Coil3StructCost & Coil4StructCost & Coil5StructCost & Coil6StructCost & Coil7StructCost & Coil8StructCost & Coil9StructCost & Coil10StructCost \\
-Quantity & noCoil1Coils & noCoil2Coils & noCoil3Coils & noCoil4Coils & noCoil5Coils & noCoil6Coils & noCoil7Coils & noCoil8Coils & noCoil9Coils & noCoil10Coils \\
-Magnet cost (single)(M USD) & Coil1MagCost & Coil2MagCost & Coil3MagCost & Coil4MagCost & Coil5MagCost & Coil6MagCost & Coil7MagCost & Coil8MagCost & Coil9MagCost & Coil10MagCost \\
-Magnet + structure cost (single) (M USD) & totalCoil1CostI & totalCoil2CostI & totalCoil3CostI & totalCoil4CostI & totalCoil5CostI & totalCoil6CostI & totalCoil7CostI & totalCoil8CostI & totalCoil9CostI & totalCoil10CostI \\
+Structural cost (M USD) & TFStructCost & CSStructCost & PF1StructCost & PF2StructCost & PF3StructCost & PF4StructCost & PF5StructCost & PF6StructCost & PF7StructCost & PF8StructCost \\
+Quantity & noTFCoils & noCSCoils & noPF1Coils & noPF2Coils & noPF3Coils & noPF4Coils & noPF5Coils & noPF6Coils & noPF7Coils & noPF8Coils \\
+Magnet cost (single)(M USD) & TFMagCost & CSMagCost & PF1MagCost & PF2MagCost & PF3MagCost & PF4MagCost & PF5MagCost & PF6MagCost & PF7MagCost & PF8MagCost \\
+Magnet + structure cost (single) (M USD) & totalTFCostI & totalCSCostI & totalPF1CostI & totalPF2CostI & totalPF3CostI & totalPF4CostI & totalPF5CostI & totalPF6CostI & totalPF7CostI & totalPF8CostI \\
 \hline
-Total cost (M USD) & totalCoil1Cost & totalCoil2Cost & totalCoil3Cost & totalCoil4Cost & totalCoil5Cost & totalCoil6Cost & totalCoil7Cost & totalCoil8Cost & totalCoil9Cost & totalCoil10Cost \\
+Total cost (M USD) & totalTFCost & totalCSCost & totalPF1Cost & totalPF2Cost & totalPF3Cost & totalPF4Cost & totalPF5Cost & totalPF6Cost & totalPF7Cost & totalPF8Cost \\
 \hline
 \end{tabular}}
 \caption{Design parameters for an individual coil of each of the main coils in this concept.}
