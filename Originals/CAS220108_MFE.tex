@@ -17,4 +17,21 @@ Consists of:
 \item Cost Category 22.01.08.05 Diagnostic and Monitoring Subsystem. This includes sensors and diagnostic tools that monitor the performance of the divertor, including temperature, plasma density, and impurity levels. This subsystem is critical for divertor operation control and for informing maintenance and operational adjustments.
 \end{itemize}
 
- The total is thus C220108 M USD.
+
+To cost this system, the material volume of the divertor is estimated using the geometry defined by the radial build (see section \ref{section:22.1.1}). The total cost is C220108 M USD.
+
+
+ 
+ \begin{table}
+     \centering
+     \begin{tabular}{lc}
+         Major radius (m)& divertorMajRad\\
+         Minor radius (m) & divertorMinRad\\
+         dz thickness (m) & divertorThicknessZ\\
+         Primary Material & divertorMaterial\\
+         Material volume (m$^3$)& divertorVol\\
+         Material mass (kg) & divertorMass\\
+     \end{tabular}
+     \caption{Divertor key properties.}
+     \label{tab:divertor prop}
+ \end{table}
